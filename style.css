@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    /*background-image: url('virus-7487442_1280.png');*/
+    background-color: #FFD700;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  h1 {
+    color: (0,0,0);
+  }
+
+  #texto1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: (0,0,0);
+  }
+
+  .conteiner_geral {
+    width: 100%;
+    height: 100%;
+    background-color: #ff7f50;    
+  }
+  
+  #game {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .fruit-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: red;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fruit {
+    padding: 10px 20px;
+    background-color: #fff8dc;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    cursor: grab;
+    font-size: 1.2em;
+    width: 100px;
+  }
+  
+  .drop-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: orange;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .drop-zone {
+    padding: 20px;
+    background-color: #e0e0e0;
+    border: 2px dashed #777;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    width: 100px;
+  }
+  
+  .drop-zone:hover {
+    background-color: #d3d3d3;
+  }
+  
+  .dragging {
+    opacity: 0.5;
+  }
+  
+  .correct {
+    background-color: #90ee90 !important;
+  }
+  
+  .wrong {
+    background-color: #ffcccb !important;
+  }
+  
+  #reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ffa07a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #reset-button:hover {
+    background-color: #ff7f50;
+  }
+  
+
+  #star-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+  }
+  
+  .star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:  gold;
+    border-radius: 50%;
+    animation: star-fall 1s ease-out forwards;
+  }
+
+  @media (max-width: 480px) {
+    .conteiner_geral{
+      height: 70%;
+  }} 
+  
+  @keyframes star-fall {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(300px) scale(0);
+      opacity: 0;
+    }
+  }
+  

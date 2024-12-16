@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Lógica com Frutas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Jogo de Lógica de Programação</h1>
+  <p id="texto1">Arraste os comandos para os conceitos corretos:</p>
+  
+  <div id="star-container"></div>
+
+<div class="conteiner_geral">
+
+  <div id="game">
+    <div class="fruit-container">
+      <div class="fruit" draggable="true" data-concept="condicionais">if-elif-else</div>
+      <div class="fruit" draggable="true" data-concept="laços">for-while-do-while</div>
+      <div class="fruit" draggable="true" data-concept="funções">Lambda-fatorial</div>
+    </div>
+
+    <div class="drop-container">
+      <div class="drop-zone" data-concept="condicionais">condicional</div>
+      <div class="drop-zone" data-concept="laços">Laço</div>
+      <div class="drop-zone" data-concept="funções">Função</div>
+    </div>
+  </div>
+
+  <button id="reset-button">Refazer</button>
+  <p id="result"></p>
+
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
